@@ -13,5 +13,5 @@ We implemented unit tests, component tests and integration tests using [Jest](ht
 npm start
 
 # run unit tests
-
+npm test
 ```
