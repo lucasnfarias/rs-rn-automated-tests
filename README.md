@@ -12,6 +12,6 @@ We implemented unit tests, component tests and integration tests using [Jest](ht
 # run the expo app
 npm start
 
-# run unit tests
+# run unit and component tests
 npm test
 ```
