@@ -1,9 +1,9 @@
-import { weatherAPIResponseMock } from "@__tests__/mocks/weatherAPIResponse.mock";
+import { weatherAPIResponseMock } from "@__tests__/mocks/api/weatherAPIResponse.mock";
 import { api } from "@services/api";
 import { getWeatherByCityService } from "@services/getWeatherByCityService";
 
 describe("Service: getWeatherByCityService", () => {
-  it("should be return weather api data formatted", async () => {
+  it("should return weather api data formatted", async () => {
     jest.spyOn(api, "get").mockResolvedValue({ data: weatherAPIResponseMock })
 
     const response = await getWeatherByCityService({ latitude: 123, longitude: 456 })
