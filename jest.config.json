@@ -8,9 +8,22 @@
     "./__tests__/mocks/libs/async-storage.js",
     "./__tests__/mocks/libs/react-native-safe-area-context.js"
   ],
-  "testPathIgnorePatterns": ["__tests__/.*"],
+  "testPathIgnorePatterns": [
+    "./__tests__/mocks",
+    "./__tests__/utils",
+    "./__tests__/coverage"
+  ],
   "transform": {
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.svg$": "jest-transformer-svg"
-  }
+  },
+  "coveragePathIgnorePatterns": [
+    "./src/@types",
+    "./src/assets",
+    "./src/styles",
+    "./src/libs/days",
+    "./src/.*/styles.ts$",
+    "./__tests__"
+  ],
+  "coverageDirectory": "./__tests__/coverage"
 }
