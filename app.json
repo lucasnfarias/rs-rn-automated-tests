@@ -35,6 +35,9 @@
         "projectId": "d1ce6cb5-c562-4215-8763-5c82c3f28b25"
       }
     },
-    "owner": "lucasnfarias"
+    "owner": "lucasnfarias",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
