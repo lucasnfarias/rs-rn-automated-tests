@@ -15,8 +15,25 @@
     "./__tests__/coverage"
   ],
   "transform": {
-    "^.+\\.jsx?$": "babel-jest",
+    "^.+\\.[jt]sx?$": [
+      "babel-jest",
+      { "presets": ["module:metro-react-native-babel-preset"] }
+    ],
     "^.+\\.svg$": "jest-transformer-svg"
+  },
+  "moduleNameMapper": {
+    "@components/(.*)": "<rootDir>/src/components/$1",
+    "@routes/(.*)": "<rootDir>/src/routes/$1",
+    "@screens/(.*)": "<rootDir>/src/screens/$1",
+    "@styles/(.*)": "<rootDir>/src/styles/$1",
+    "@assets/(.*)": "<rootDir>/src/assets/$1",
+    "@services/(.*)": "<rootDir>/src/services/$1",
+    "@libs/(.*)": "<rootDir>/src/libs/$1",
+    "@utils/(.*)": "<rootDir>/src/utils/$1",
+    "@contexts/(.*)": "<rootDir>/src/contexts/$1",
+    "@hooks/(.*)": "<rootDir>/src/hooks/$1",
+    "@src/(.*)": "<rootDir>/src/$1",
+    "@__tests__/(.*)": "<rootDir>/__tests__/$1"
   },
   "coveragePathIgnorePatterns": [
     "./src/@types",
