@@ -10,16 +10,10 @@
       },
       "ios": {
         "simulator": true
-      },
-      "env": {
-        "EXPO_PUBLIC_WEATHER_APP_ID": "YOUR_WEATHER_APP_ID_HERE"
       }
     },
     "production": {
-      "autoIncrement": true,
-      "env": {
-        "EXPO_PUBLIC_WEATHER_APP_ID": "YOUR_WEATHER_APP_ID_HERE"
-      }
+      "autoIncrement": true
     }
   }
 }
