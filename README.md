@@ -24,6 +24,9 @@ eas build -p android --profile preview --local
 
 # build production .aab on remote (expo.dev)
 eas build -p android --profile production
+
+# use EAS Update
+eas update --branch {channel} --message "{your message about this update}"
 ```
 
 # Deploy

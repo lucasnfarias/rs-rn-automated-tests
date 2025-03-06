@@ -57,5 +57,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build & Submit
+      - name: Build & Submit Android
         run: eas build --platform android --profile production --non-interactive --auto-submit-with-profile=preview --no-wait
+
+      # I won't run this because i don't have a Apple Developer Account (no $$$)
+      # If you want to build and submit both platforms at the same time you can use `--platform all`
+      # - name: Build & Submit iOS
+      #   run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform ios --profile preview --non-interactive --auto-submit-with-profile=preview --no-wait

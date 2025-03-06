@@ -11,14 +11,21 @@
         "autoIncrement": "versionCode"
       },
       "ios": {
-        "simulator": true
-      }
+        "simulator": true,
+        "autoIncrement": "buildNumber"
+      },
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true,
       "android": {
         "autoIncrement": "versionCode"
-      }
+      },
+      "ios": {
+        "image": "latest",
+        "autoIncrement": "buildNumber"
+      },
+      "channel": "production"
     }
   },
   "submit": {
@@ -27,6 +34,10 @@
         "track": "internal",
         "serviceAccountKeyPath": "google-services.json",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "YOUR_IOS_DEV_EMAIL",
+        "ascAppId": "YOUR_IOS_APP_ID"
       }
     }
   }

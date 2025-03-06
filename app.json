@@ -2,7 +2,7 @@
   "expo": {
     "name": "iweather",
     "slug": "rn-iweather-mba-rocketseat",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -39,6 +39,12 @@
     "owner": "lucasnfarias",
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d1ce6cb5-c562-4215-8763-5c82c3f28b25"
+    }
   }
 }
